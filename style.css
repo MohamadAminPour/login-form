@@ -1,0 +1,101 @@
+@font-face {
+  font-family: Hezargan;
+  src: url(./Hezargan.ttf);
+}
+
+:root {
+  --dark1: #333;
+  --dark2: #222;
+  --light1: #fff;
+  --light2: rgb(167, 167, 167);
+  --primary: #00b93a;
+  --primaryLight: #00b93b8e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--dark2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* padding: 1rem; */
+}
+input,
+button {
+  border: none;
+  outline: none;
+}
+a {
+  text-decoration: none;
+  color: var(--light2);
+  font-size: 1.2rem;
+  font-family: Hezargan;
+}
+form {
+  background-color: var(--dark1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 30rem;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 0.4rem;
+  margin: 1rem;
+
+}
+form .title {
+  color: var(--light1);
+  font-size: 2.4rem;
+  font-family: Hezargan;
+}
+
+
+form input,
+form button {
+  width: 100%;
+  padding: 0.8rem 0.5rem;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+  font-family: Hezargan;
+}
+
+.securityCode-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.securityCode-container p,
+.securityCode-container input {
+  background-color: rgba(35, 33, 33, 0.558);
+  color: var(--light1);
+}
+.securityCode-container p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light2);
+  border-radius: 0.3rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.4rem;
+  font-family: Hezargan;
+}
+.submitBtn {
+  background-color: var(--primary);
+  color: var(--light1);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submitBtn:hover {
+  background-color: var(--primaryLight);
+}
